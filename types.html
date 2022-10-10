@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8 lang=eng">
+    <title>types.html</title>
+    <!--   <link rel="stylesheet" href="/css/style.css"> -->
+    <a href="index.html">Return</a>
+    <h1>TypeScript and Types</h1>
+  </head>
+
+  <body>
+    <div id="types">
+      Typescript offers all of JavaScript's features as well as an additional type system.
+      <div id="inferred_types"> 
+        <h2>Inferred Types</h2>
+        Typescript can often infer the intended variable types based off of the type they are initially set to and will generate them automatically.
+        In many if not most cases, you won't need to worry about defining any type, just make sure not to accidentally change it!
+        <br><img src="none" alt="Example of how TypeScript infers JavaScript types with simple variables.">
+    </div>
+      <div id="defined_types">
+        <h2>Defined Types</h2>
+        Some design methods in JavaScript make it difficult for TypeScript to infer types.
+        In this case, it can be useful to define your intended types.
+        <br><img src="none" alt="Example of using an interface to define an object's shape.">
+    </div>
+      <div id="composed_types">
+        <h2>Composed Types</h2>
+            In TypeScript, you can create your own types. You declare a new type using the <i>type</i> keyword. Two popular ways to do so are using unions and generics.
+        <h3>Unions</h3>
+            Unions can be used to declare a type that can be one of many different states, much like an enumeration.
+            <br>For example: a boolean variable can be either true or false, so a boolean would be declared with unions as <em>type MyBool = true | false;</em> 
+            <br><img src="none" alt="Example of alternative union-based composed types.">
+        <h3>Generics</h3>
+            Generics provide variables to types. Commonly, these are arrays.
+            <br><img src="none" alt="Example of creating a type specific array.">
+            <br>You may also declare your own types that use generics.
+            <br><img src="none" alt="Example of creating an interface describing a generic type.">
+      </div>
+      <div id="structural_types">
+        <h2>Structural Types</h2>
+        A core principle of TypeScript is that it checks the <i>shape</i> that values have. This is known as <em>duck typing</em> or <em>structural typing</em>.
+        If two objects have the same shape, TypeScript assumes them to have the same type, even if they are not declared so.
+        <br><img src="none" alt="Example of an interface being inferred from a value's shape">
+      </div>
+    </div>
+
+  </body>
+
+</html>
