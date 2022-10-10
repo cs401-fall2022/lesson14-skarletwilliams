@@ -3,10 +3,10 @@ This repository is hosting a project page that will be a tutorial on how to conv
 ## Week One: JavaScript Fundamentals turned TypeScript
 - [ ] Tutorial Stuff
   - [ ] Types Page
-    - [ ] Inferred Types
-    - [ ] Defined Types
-    - [ ] Composing Types
-    - [ ] Structural Types
+    - [x] Inferred Types
+    - [x] Defined Types
+    - [x] Composing Types
+    - [x] Structural Types
     - [ ] Images
   - [ ] Basics Page
     - [ ] Static Type Checking
