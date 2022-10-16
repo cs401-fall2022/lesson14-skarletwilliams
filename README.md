@@ -28,7 +28,7 @@ This repository is hosting a project page that will be a tutorial on how to conv
     - [ ] General Outline
     - [ ] Images
 - [ ] CSS File
-  - [ ] General Formatting
+  - [x] General Formatting
   - [ ] Famcy Stuff :)
  
 # OTHER README CONTENT
