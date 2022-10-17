@@ -1,6 +1,11 @@
 div {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+div p {
+    color: rgb(74, 74, 74);
+    margin: 0px;
+    font-size: smaller;
+}
 div#title {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:xx-large;
