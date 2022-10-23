@@ -5,48 +5,40 @@
     <meta charset="utf-8 lang=eng">
     <title>Java_to_Type.html</title>
       <link rel="stylesheet" href="style.css">
-    <a href="index.html">Return</a>
+    <a id="back" href="types.html">Previous</a>
+    <a id="return" href="index.html">Return To Table of Contents</a>
+    <a id="next"  href="t_from_j.html"></a>
     <div id="title">Fundamentals of TypeScript</div>
   </head>
 
   <body>
-    <div id="basics">
-        Something probably should go here.
+    <div class="chunk">
+        Unlike Java, Javascript doesn't provide any ways to tell what type of object you have created and are working with. There's no way to tell what methods you can call on an object without just attempting it. This can get annoying. 
       <div id="static_typecheck"> 
         <div class="section">Static Type Checking</div>
-        Some stuff here
+        Typescript is a static type-checker that will check your variables as you write them, so you don't constantly have to run your code and hope you catch all of the errors. Calling a method on a variable that does not have that method will result in  an error before running the code.
+        <br> <img src="basics_static_typecheck.png" alt="Example of Static Type Checking">
       </div>
       <div id="nonexception_fail">
         <div class="section">Non-Exception Failures</div>
-        Some stuff here
+        Sometimes, javascript won't throw an exception on some things that might be considered errors. Such as returning Undefined when calling variables property that does not exist. In this case, typescript would produce an error, as it is assumed the user shouldn't be able to access properties that do not exist.
+        <br> <img src="basics_non_2.png" alt="Example of Non-Exception Failures - no property">
+        <br> Typescript will also throw errors on typos,
+        <br> <img src="basics_non_3.png" alt="Example of Non-Exception Failures - typos">
+        <br> uncalled functions,
+        <br> <img src="basics_non_4.png" alt="Example of Non-Exception Failures - uncalled functions">
+        <br> and basic logic errors.
+        <br> <img src="basics_non_5.png" alt="Example of Non-Exception Failures - basic logic errors">
       </div>
       <div id="types_for_tooling">
         <div class="section">Types for Tooling</div>
-        Some stuff here
+        Since Typescript takes tooling so seriously, it can prevent the above errors from ever occurring by suggesting possible methods on a variable once it knows the variables type, either through inference or type definition.
+        <br> <img src="basics_tooling.png" alt="Example of TypeScript suggesting methods."> 
       </div>
       <div id="ts_compiler">
         <div class="section">TypeScript Compiler</div>
-        Some stuff here
-      </div>
-      <div id="em_errors">
-        <div class="section">Emitting with Errors</div>
-        Some stuff here
-      </div>
-      <div id="exp_types">
-        <div class="section">Explicit Types</div>
-        Some stuff here
-      </div>
-      <div id="erased_types">
-        <div class="section">Erased Types</div>
-        Some stuff here
-      </div>
-      <div id="downleveling">
-        <div class="section">Downleveling</div>
-        Some stuff here
-      </div>
-      <div id="strictness">
-        <div class="section">Strictness</div>
-        Some stuff here
+        The typescript compiler, or tsc, can be used to compile typescript code to output it as a javascript file.
+        <br> The typescript compiler allows for a lot more strictness and protection against errors. For more information on the typescript compiler, please visit:  <a href="https://www.typescriptlang.org/docs/handbook/2/basic-types.html">https://www.typescriptlang.org/docs/handbook/2/basic-types.html</a>
       </div>
     </div>
 

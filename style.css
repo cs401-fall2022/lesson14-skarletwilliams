@@ -30,9 +30,30 @@ div.section {
 a {
     color: rgb(158, 38, 169);
 }
+a#next{
+    display: inline-block;
+    width:30%;
+    text-align: right;
+}
+a#return{
+    display: inline-block;
+    width:30%;
+    text-align: center;
+}
+a#back{
+    display: inline-block;
+    text-align: left;
+    width:30%;
+}
 
 ul {
     list-style: none;
+    padding-left: 0px;
+}
+
+ul ul a{
+    size: smaller;
+    color: rgb(186, 120, 192);
 }
 
 body {

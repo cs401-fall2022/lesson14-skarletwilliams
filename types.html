@@ -5,7 +5,9 @@
     <meta charset="utf-8 lang=eng">
     <title>types.html</title>
       <link rel="stylesheet" href="style.css">
-    <a href="index.html">Return</a>
+      <a id="back" href="index.html"></a>
+      <a id="return" href="index.html">Return To Table of Contents</a>
+      <a id="next"  href="basics.html">Next</a>
     <div id="title">TypeScript and Types</div>
   </head>
 
@@ -16,32 +18,35 @@
         <div class="section">Inferred Types</div>
         Typescript can often infer the intended variable types based off of the type they are initially set to and will generate them automatically.
         In many if not most cases, you won't need to worry about defining any type, just make sure not to accidentally change it!
-        <br><img src="none" alt="Example of how TypeScript infers JavaScript types with simple variables.">
+        <br><img src="types_infer.png" alt="Example of how TypeScript infers JavaScript types with simple variables.">
     </div>
       <div id="defined_types">
         <div class="section">Defined Types</div>
         Some design methods in JavaScript make it difficult for TypeScript to infer types.
         In this case, it can be useful to define your intended types.
-        <br><img src="none" alt="Example of using an interface to define an object's shape.">
-    </div>
+        <br><img src="types_define_01.png" alt="Example of using an interface to define an object's shape, p1.">
+        <br><img src="types_define_02.png" alt="Example of using an interface to define an object's shape, p2.">
+        <br><img src="types_define_03.png" alt="Example of using an interface to define an object's shape, p3.">
+      </div>
       <div id="composed_types">
         <div class="section">Composed Types</div>
             In TypeScript, you can create your own types. You declare a new type using the <i>type</i> keyword. Two popular ways to do so are using unions and generics.
         <div class="subtitle">Unions</div>
             <p>Unions can be used to declare a type that can be one of many different states, much like an enumeration.
             <br>For example: a boolean variable can be either true or false, so a boolean would be declared with unions as <em>type MyBool = true | false;</em> 
-            <br><img src="none" alt="Example of alternative union-based composed types."></p>
+            <br><img src="types_comp_union.png" alt="Example of alternative union-based composed types."></p>
         <div class="subtitle">Generics</div>
             <p>Generics provide variables to types. Commonly, these are arrays.
-            <br><img src="none" alt="Example of creating a type specific array.">
+            <br><img src="types_comp_generic.png" alt="Example of creating a type specific array.">
             <br>You may also declare your own types that use generics.
-            <br><img src="none" alt="Example of creating an interface describing a generic type."></p>
+            <br><img src="types_comp_generic_2.png" alt="Example of creating an interface describing a generic type."></p>
       </div>
       <div id="structural_types">
         <div class="section">Structural Types</div>
         A core principle of TypeScript is that it checks the <i>shape</i> that values have. This is known as <em>duck typing</em> or <em>structural typing</em>.
         If two objects have the same shape, TypeScript assumes them to have the same type, even if they are not declared so.
-        <br><img src="none" alt="Example of an interface being inferred from a value's shape">
+        <br><img src="types_struct.png" alt="Example of an interface being inferred from a value's shape">
+        <br>In the example above, the variable point is never declared to be of type Point, but it is assumed to be one because of it's shape.
       </div>
     </div>
 
